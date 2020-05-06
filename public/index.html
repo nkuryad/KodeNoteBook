@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.4.0/themes/prism-dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.0.0/marked.min.js"></script>
+
+    <title>KodeNoteBook</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .app {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            height: 64px;
+            background-color: #164c5e;
+            align-items: center;
+        }
+
+        .hTitle {
+            font-size: 36px;
+            margin: 4px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            flex: 1 1;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(141, 141, 141);
+            padding: 8px;
+        }
+
+        .title {
+            font-size: 14px;
+        }
+
+        .desc {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: right;
+            background-color: #042d3bb3;
+            height: 48px;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class='header'>
+            <div class='hTitle'>KodeNoteBook</div>
+        </div>
+        <div class="content"></div>
+        <div class="footer">
+            <div style="margin-left:auto;margin-right: 24px;">&copy; AnkurYadav</div>
+        </div>
+    </div>
+    <!-- post-dep-start  -->
+    <!-- <lib>10</lib> -->
+    <script>
+        window.LIB_PATH = '/lib-v10/'
+    </script>
+    <script src="/lib-v10/index.js" type="module"></script>
+    <link href="/lib-v10/markdown.css" rel="stylesheet">
+    <!-- post-dep-end  -->
+</body>
+
+</html>
